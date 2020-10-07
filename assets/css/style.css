@@ -1,681 +1,741 @@
-
 /*............................................Heading*/
 
+/* Main nav bar */
 .navbar {
-	padding: 10px 10px 10px 10px;
-	height: 60px;
-	background-color: #A63A79;
-	text-shadow: 2px 2px 3px black;
+    padding: 10px 10px 10px 10px;
+    height: 60px;
+    background-color: #a63a79;
+    text-shadow: 2px 2px 3px black;
 }
 
 .custom-toggler.navbar-toggler {
-	border-color: #fff;
-	border-width: 2px;
-	box-shadow: 2px 2px 3px black;
+    border-color: #fff;
+    border-width: 2px;
+    box-shadow: 2px 2px 3px black;
 }
 
 .navbar-dark .navbar-brand {
-	font-family: 'Concert One', cursive;
-	font-size: 22px;
-	vertical-align: middle;
-	text-align: center;
-	color: #fff;
-	text-shadow: 2px 2px 3px black;
+    font-family: "Concert One", cursive;
+    font-size: 22px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 3px black;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-	color: #fff;
-	font-family: 'Concert One', cursive;
-	font-size: 22px;
+    color: #fff;
+    font-family: "Concert One", cursive;
+    font-size: 22px;
 }
 
+/* Hamburger button */
 .fa-bars {
-	color: #fff;
-	text-shadow: 2px 2px 3px black;
+    color: #fff;
+    text-shadow: 2px 2px 3px black;
 }
-
 
 /*............................................Home Page*/
 
+/* Main band image */
 .img-fluid {
-	width: 100%;
-	height: 36em;
+    width: 100%;
+    height: 36em;
 }
 
+/* Main band image responsive */
 .img-responsive {
-	display: block;
-	width: 100%;
-	height: 103%;
-}
+    display: block;
+    width: 100%;
+    height: 103%;
+} 
 
+/* Main image colour logo */
 .img-title {
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    moz-transform: translate(-50%, -50%);
+    webkit-transform: translate(-50%, -50%);
+    ms-transform: translate(-50%, -50%);
 }
-
 
 /*............................................Band Page*/
 
-
-
+/* Band members name */
 .card-header {
-	text-align: center;
-	font-family:Arial, Helvetica;
-	font-size: 20px;
-	background-color: #AB92B3;
+    padding: .75rem 1.25rem;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    background-color: #ab92b3;
+    font-family: Arial, Helvetica;
+    border: 1px solid #ab92b3;
+    border-radius: 100px;
 }
 
-.card-title {
-	text-align: center;
-	font-family: 'Concert One', cursive;
-	margin-bottom: 0px;
-}
-
+/* Band card */
 .card {
-	margin: 10px;
-	border-style: solid;
-	border-color: #803790;
-	border-width: 1px;
-	background-color: #AB92B3;
-	z-index: -1;
+    margin-top:-50px;
+    background-color: #ab92b3;
 }
 
+/* Band biography */
 .card-text {
-	font-family:Arial, Helvetica;
-	text-align: justify;
+    font-family: Arial, Helvetica;
+    text-align: justify;
 }
 
-.column {
-  float: left;
-  width: 25%;
+/* Band pictures */
+.card-img, .card-img-top {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
-
-
-
-
 
 /*............................................Tours*/
 
+/* Table colour */
 .bg-primary {
-	background-color: #AB92B3!important;
+    background-color: #ab92b3 !important;
 }
 
+/* Table margins */
 .table {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
+/* Table responsive */
 .table-responsive {
-	height: auto;
+    height: auto;
 }
 
 .table-header {
-	text-align: center;
+    text-align: center;
 }
 
 td,
 th {
-	font-family:Arial, Helvetica;
-	font-size: 10px;
-	font-weight: 900;
-	color: #000;
+    font-family: Arial, Helvetica;
+    font-size: 10px;
+    font-weight: 900;
+    color: #000;
 }
-
 
 /*............................................Store*/
 
-
 /* Grid container */
-
 #p-grid {
-	margin-left: 5px;
-	margin-right: 5px;
-	display: grid;
-	margin-top: 5px;
-	margin-bottom: 6px;
-	
-	/* Width of columns */
-	grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    margin-top: 5px;
+    margin-bottom: 6px;
+
+/* Width of grid columns */
+    grid-template-columns: 25% 25% 25% 25%;
 }
-
-
-/* Product items */
 
 div.p-grid-in {
-	box-sizing: border-box;
-	margin: 5px;
-	padding: 10px;
-	border: 1px solid #e8f0ff;
-	border-radius: 5px;
-	box-shadow: 2px 2px 3px black;
-	background: #AB92B3;
-	
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #e8f0ff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    background: #ab92b3;
 }
 
-img.p-img {
-	width: 100%;
-	height: auto;
-	border-radius: 5px;
-}
-
+/* Product names */
 div.p-name {
-	font-size: 18px;
-	text-align: center;
-	font-family:Arial, Helvetica;
-	margin-top: 2px;
-	color: black;
-	border-radius: 5px;
-	
+    font-size: 18px;
+    text-align: center;
+    font-family: Arial, Helvetica;
+    margin-top: 2px;
+    color: black;
+    border-radius: 5px;
 }
 
+/* Product price */
 div.p-price {
-	color: black;
-	text-align: center;
-	font-size: 20px;
-	text-align: center;
-	font-family:Arial, Helvetica;
-	
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica;
 }
 
+/* Product description */
 div.p-desc {
-	color: #888;
-	font-size: 0.9em;
+    color: #888;
+    font-size: 0.9em;
 }
 
+/* Add to cart button */
 button.p-add {
-	background: #f46b41;
-	color: #fff;
-	border: none;
-	width: 100%;
-	padding: 10px;
-	font-size: 1.1em;
-	cursor: pointer;
-	border-radius: 5px;
+    background: green;
+    color: #000;
+    border: none;
+    width: 100%;
+    padding: 1px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
+/* Audio player track title */
 h6 {
-    font-family:Arial, Helvetica;
-	color: black;
-	font-size: 15px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	text-align: center;
+    font-family: Arial, Helvetica;
+    color: black;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
+/* Audio player */
 audio {
-	width: 95%;
-	box-shadow: 2px 2px 3px black;
-	border-radius: 100px;
-	border-width: 25px;
-	transform: scale(1.05);
-	background-color: black;
-	margin-left: 7px;
-	
+    width: 95%;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 100px;
+    border-width: 25px;
+    transform: scale(1.05);
+    background-color: black;
+    margin-left: 7px;
 }
-
 
 /* Responsive */
 
-
-
 @media only screen and (max-width: 600px) {
-	#p-grid {
-		grid-template-columns: 100%;
-	}
+#p-grid {
+    grid-template-columns: 100%;
 }
-
+}
 
 /*............................................Contact*/
 
-:root {
-	--white: #afafaf;
-	--red: #e31b23;
-	--borderFormEls: hsl(0, 0%, 10%);
-	--bgFormEls: hsl(0, 0%, 14%);
-	--bgFormElsFocus: hsla(272, 90%, 54%, 0.6);
+.contact-section .form-control {
+    border: 1px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+    font-weight: 900;
+    font-family: Arial, Helvetica;
+}
+.contact-fields {
+    padding: 10px 0px 0px;
+    text-align: center;
+}
+.phone {
+    padding-top: 50px;
+}
+.phone,
+.email,
+.working-hours {
+    margin-bottom: 30px;
 }
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	outline: none;
+.phone a,
+.email a,
+.location a {
+    color: #fd4f00;
+    font-size: 18px;
+}
+.contact-h2 {
+    color: #fd4f00;
+    padding-top: 20px;
+}
+.contact-fields .form-group {
+    margin-bottom: 15px;
 }
 
-a {
-	color: inherit;
+.contact-fields .form-group input,
+.contact-fields .form-group textarea {
+    font-size: 16px;
 }
 
-input,
-select,
-textarea,
-button {
-	font-family: inherit;
-	font-size: 20px;
-	font-family: 'Concert One', cursive;
+.btn {
+    font-size: 15px;
+    padding: 22px 46px 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    letter-spacing: 0.3px;
+    border-radius: 5px;
+}
+.btn.btn-accent {
+    background: #000;
+    color: white;
+}
+.btn.btn-accent:hover {
+    background: green;
 }
 
-button,
-label {
-	cursor: pointer;
+.ct-section-head {
+    font-family: Arial, Helvetica;
+    font-weight: 900;
+    color: #101f1d;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-top: 35px;
+    letter-spacing: 1.25px;
+    margin-bottom: 5px;
+    text-align: center;
 }
-
-select {
-	appearance: none;
-}
-
-select::-ms-expand {
-	display: none;
-}
-
-select:-moz-focusring {
-	color: transparent !important;
-	text-shadow: 0 0 0 var(--white);
-}
-
-textarea {
-	resize: none;
-}
-
-ul {
-	list-style: none;
-}
-
-
-.my-form select,
-.my-form input,
-.my-form textarea,
-.my-form button {
-	margin-top: 15px;
-	width: 50%;
-	padding: 15px 10px;
-	border: 1px solid var(--borderFormEls);
-	border-color: #1A237E;
-	border-radius: 5px;
-	color: white;
-	background: var(--bgFormEls);
-	background-color: #2196f3;
-	transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
-	text-align: center;
-}
-
-.my-form textarea {
-	height: 121px;
-	text-align: center;
-}
-
-.my-form ::placeholder {
-	color: inherit;
-	opacity: 1;
-}
-
-.my-form select:focus,
-.my-form input:focus,
-.my-form textarea:focus,
-.my-form button:focus {
-	background: var(--bgFormElsFocus);
-}
-
-.my-form select:focus,
-.my-form input:focus,
-.my-form textarea:focus {
-	transform: scale(1.02);
-}
-
-.my-form *:required,
-.my-form select {
-	background-repeat: no-repeat;
-	background-position: center right 12px;
-	background-size: 15px 15px;
-}
-
-.my-form .btn-grid {
-	position: relative;
-	overflow: hidden;
-	transition: filter 0.2s;
-}
-
-.my-form button:enabled:hover,
-.my-form button:focus {
-	background: var(--bgFormElsFocus);
-	background-color: red;
-}
-
-.my-form button>* {
-	height: 25px;
-	display: inline-block;
-	width: 100%;
-	transition: transform 0.4s ease-in-out;
-	text-align: center;
-}
-
-.my-form button .back {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-110%, -50%);
-}
-
-.my-form button:enabled:hover .back,
-.my-form button:focus .back {
-	transform: translate(-50%, -50%);
-}
-
-.my-form button:enabled:hover .front,
-.my-form button:focus .front {
-	transform: translateX(110%);
-}
-
-.form-logo {
-	float: right;
-	border-radius: 5px;
-	margin-top: 20px;
-	margin-right: -50px;
-	width: 550px;
-}
-
 
 /*............................................Footer*/
 
 .footer {
-	height: 50px;
-	width: 100%;
-	text-align: center;
-	font-size: 20px;
-	font-family: 'Concert One', cursive;
-	color: #fff;
-	background-color: #A63A79;
-	text-shadow: 2px 2px 3px black;
-	vertical-align: middle;
-	position: fixed;
-	bottom: 0;
-	;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Concert One", cursive;
+    color: #fff;
+    background-color: #a63a79;
+    text-shadow: 2px 2px 3px black;
+    vertical-align: bottom;
+    position: fixed;
+    bottom: 0;
 }
 
+/*.............................................Media Queries*/
 
-
-
-/*.............................................New Media Queries*/
-
-@media only screen and (min-width: 360px){
-	
-	h3{
-		font-size: 18px;
-		font-weight: 900;
-	}
-	
-	.column p {
-		font-size: 15px;
-		font-weight: 600;
-	}
-	
-
-	
-	.column {
-		width: 100%;
-		display: block;
-		margin-top: -45px;
-		padding-top: 35px;
-		margin-bottom: 50px;
-		text-align: center;
-		background-color: #AB92B3;
-	}
-
-	
-	.img-responsive {
-	width: 100%;
-	height: 93vh;
+@media only screen and (min-width: 300px) and (max-width: 575px) {
+#p-grid {
+    grid-template-columns: 50% 50%;
+    margin-top: 20px;
 }
 
-	.navbar-toggler {
-		margin-right: 100%;
-		padding-top: 3px;
-    	font-size: 1.25rem;
-		border-radius: .25rem;
-		margin-top: -40px;
-	}
-	
-	.navbar-brand {
-		margin-top: -5px;
-		margin-left: auto;
-	}
-	
-	.navbar-dark .navbar-nav .nav-link{
-		position:relative;
-		display: block;
-		width: 100vw;
-		background-color: black;
-		opacity: 0.5;
-		height: 100%;
-		font-size: 18px;
-		top: 10px;
-		transition: all 0.3s ease-in;
-		overflow-y: hidden;
-		z-index: 1;
-	}
-	
-		.mobile-tour {
-		margin-top: 10px;
-		display: block;
-	}
-	.table-responsive{
-		display: none;
-	}
-	
-
-
-	
+h3 {
+    font-size: 18px;
+    font-weight: 900;
 }
 
-
-
-@media only screen and (min-width: 375px) and (max-width: 576px) {
-	.column {
-		width: 100%;
-		display: block;
-		margin-top: -45px;
-		padding-top: 35px;
-		margin-bottom: 50px;
-		text-align: center;
-		background-color: #AB92B3;
-	}
-
-	.navbar-toggler {
-		margin-right: 100%;
-		padding-top: 3px;
-    	font-size: 1.25rem;
-		border-radius: .25rem;
-		margin-top: -40px;
-	}
-	
-	.navbar-brand {
-		margin-top: -5px;
-		margin-left: auto;
-	}
-	
-	.navbar-dark .navbar-nav .nav-link{
-		position:relative;
-		display: block;
-		width: 100vw;
-		background-color: black;
-		opacity: 0.5;
-		height: 100%;
-		font-size: 18px;
-		top: 10px;
-		transition: all 0.3s ease-in;
-		overflow-y: hidden;
-		z-index: 1;
-	}
-
-	.mobile-tour {
-		margin-top: 10px;
-		display: block;
-	}
-	.table-responsive{
-		display: none;
-	}
-	
-	.img-responsive {
-	width: 100%;
-	height: 93vh;
+.img-fluid {
+    width: 100%;
+    height: 20.8vh;
 }
 
+.column {
+    width: 100%;
+    display: block;
+    margin-top: -45px;
+    padding-top: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #ab92b3;   
 }
 
-@media only screen and (min-width: 800px){
-	.img-fluid {
-	width: 100%;
-	height: 10vh;
-}
-	.img-responsive {
-	width: 100%;
-	height: 87.7vh;
+.column p {
+    font-size: 15px;
+    font-weight: 600;
 }
 
+.navbar-brand {
+    font-size: 5px;
+    color: red;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    position: relative;
+    display: block;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.5;
+    height: 100%;
+    font-size: 18px;
+    top: 6px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    z-index: 1;
+}
+
+.desktop-band {
+        display: none;
+    }
+
+/* Mobile band member name */    
+    .header {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        padding: 5px;
+        background-color: #ab92b3;
+        font-weight: bolder;
+        z-index:1;
+    }
+
+/* Mobile band page */      
+    .mobile-band {
+        display: block;
+
+    }
+    .title{
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ab92b3;
+    font-weight: bold;
+    margin-bottom: 0px;
+    
+    }
+    
+
+    .text {
+        background-color: #ab92b3;
+        margin-top:-8px;
+        padding: 10px;
+        height: 45vh;
+        text-align: justify;
+       
+    }
+
+/* Tour page table mobile */
 .mobile-tour {
-	display:none;
+    margin-top: 50px;
+    display: block;
 }
 
-
-td {
-	font-family:Arial, Helvetica;
-	font-size: 10px;
-	font-weight: 700;
-	color: #000;
+.table-responsive {
+    display: none;
+}
 }
 
-th {
-	font-family:Arial, Helvetica;
-	font-size: 11px;
-	font-weight:900;
-	color: #000;
+@media only screen and (min-width: 800px) and (max-width: 1365px) {
+/* Grid container */
+#p-grid {
+    display: grid;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    height: 240vh;
+
+/* Width of grid columns */
+grid-template-columns: 50% 50%;
 }
 
+/* Band card */
+.card {
+    height: 108%;
+    z-index: -1;
+}
+
+.card-text {
+    font-family: Arial, Helvetica;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    background-color: #ab92b3;
+    font-family: Arial, Helvetica;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ab92b3;
+    border-radius: 100px;
+}
+
+.card-title {
+    text-align: center;
+    font-family: "Concert One", cursive;
+    font-size: 17px;
+    margin-top: -18px;
+    margin-bottom: 0px;
+} 
+
+  .fa-chevron-left {
+        color: black;
+        font-size: 18px;
+        height: 90px;
+    }
+    
+    .fa-chevron-right {
+        color: black;
+        font-size: 18px;
+        height: 90px;
+    }
+
+  
+    .mobile-band {
+        display:none;
+    }
+
+/* Album artwork */
+img.p-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+div.p-grid-in {
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px solid #e8f0ff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    background: #ab92b3;
+}
+   
+.contact-fields .form-group input,
+.contact-fields .form-group textarea {
+    font-size: 13px;
+}
+
+/* Audio player */
+audio {
+    width: 95%;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 100px;
+    border-width: 25px;
+    transform: scale(1.05);
+    background-color: black;
+    margin-left: 9px;
+}
+
+/* Audio player track title */
 h6 {
-    font-family:Arial, Helvetica;
-	font-size: 11px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
+/* Product names */
 div.p-name {
-	font-size: 15px;
-	text-align: center;
-	border-radius: 5px;
-	
+    font-size: 15px;
 }
 
+/* Product price */
 div.p-price {
-	color: black;
-	font-size: 15px;
-	text-align: center;
-	font-family:Arial, Helvetica;
-	
+    font-size: 15px;
 }
 
-	
+/* Add to cart button */
+button.p-add {
+    background: green;
+    color: #000;
+    border: none;
+    width: 100%;
+    padding: 1px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
+.col {
+    float: left;
+    width: 50%;
+}
 
+/* Main band image */
+.img-fluid {
+    display: block;
+    width: 100%;
+    height: 75.5vh;
+}
 }
 
 @media only screen and (min-width: 1024px) {
-	#p-grid {
-		grid-template-columns: 25% 25% 25% 25%;
-		margin-top: 50px;
-	}
-	
-	h6 {
-   	font-size: 14px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-td {
-	font-family:Arial, Helvetica;
-	font-size: 18px;
-	font-weight: 700;
-	color: #000;
-}
-
-th {
-	font-family:Arial, Helvetica;
-	font-size: 20px;
-	font-weight:900;
-	color: #000;
-}
-
-
-.img-responsive {
-	width: 100%;
-	height: 90.8vh;
+/* Grid container */
+#p-grid {
+    display: grid;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    height: 215vh;
 }
 }
 
-
-
-
-	
-
-
-@media only screen and (min-width: 1920px){
-	
-		#p-grid {
-		grid-template-columns: 25% 25% 25% 25%;
-		margin-top: 90px;
-	}
-	
-
-
-
-td {
-	font-family:Arial, Helvetica;
-	font-size: px;
-	font-weight: 700;
-	color: #000;
+@media only screen and (min-width: 1280px) {
+/* Grid container */
+#p-grid {
+    display: grid;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    height: 0;
+    
+/* Width of grid columns */
+grid-template-columns: 25% 25% 25% 25%;
+}
 }
 
-th {
-	font-family:Arial, Helvetica;
-	font-size: 25px;
-	font-weight:900;
-	color: #000;
+@media only screen and (min-width: 1366px) {
+/* Grid container */
+#p-grid {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    height: 0;
+
+/* Width of grid columns */
+grid-template-columns: 25% 25% 25% 25%;
 }
 
-.img-responsive {
-	width: 100%;
-	height: 93.8vh;
-}
 
+
+
+/* Tour page table desktop */
 .table {
-	margin-top: 150px;
-	
+    margin-top: 20px;
 }
 
+/* Tour page for mobile devices */
+.mobile-tour {
+    display: none;
 }
 
+ .fa-chevron-left {
+        color: black;
+        font-size: 20px;
+        height: 100px;
+    }
+    
+    .fa-chevron-right {
+        color: black;
+        font-size: 20px;
+        height: 100px;
+    }
 
-	
+    .mobile-band {
+        display: none;
+    }
 
 
+.card {
+    height: 110%;
+    z-index: -1;
+}
 
+.card-header {
+    font-size: 23px;
+    font-weight: bolder;
+}
 
+.card-title{
+    margin-top: -15px;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
- 	
+/* Band biography */
+.card-text {
+    font-family: Arial, Helvetica;
+    text-align: justify;
+    font-size: 15px;
+}
 
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width: 30vw;
+  height: 30vh;
+}
 
+td,
+th {
+    font-family: Arial, Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
 
+.contact-fields .form-group input,
+.contact-fields .form-group textarea {
+    font-size: 15px;
+}
 
+.ct-section-head {
+    font-family: Arial, Helvetica;
+    font-weight: 900;
+    color: #101f1d;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-top: 35px;
+    letter-spacing: 1.25px;
+    margin-bottom: 5px;
+}
+}
 
+@media only screen and (min-width: 1680px) {
+/* Grid container */
+#p-grid {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    margin-top: 125px;
+    margin-bottom: 6px;
 
+/* Width of grid columns */
+    grid-template-columns: 25% 25% 25% 25%;
+}
 
+/* Tour page table desktop */
+.table {
+    margin-top: 155px;
+}
 
+.col-md-12 {
+    margin-top: 200px;
+}
+}
 
+@media only screen and (min-width: 1920px) {
+    /* Grid container */
+#p-grid {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    margin-top: 100px;
+    margin-bottom: 6px;
 
+/* Width of grid columns */
+    grid-template-columns: 25% 25% 25% 25%;
+}
+}
+
+/* Main band image responsive */
+.img-responsive {
+    width: 100%;
+    height: 93.8vh;
+}
+
+td {
+    font-family: Arial, Helvetica;
+    font-size:30px;
+    font-weight: 700;
+    color: #000;
+}
+
+th {
+    font-family: Arial, Helvetica;
+    font-size: 25px;
+    font-weight: 900;
+    color: #000;
+}
+/* Band page container */
+.col{
+    margin-top: 50px;
+    height: 0vh;
+}
+
+/* Tour page table desktop */
+.table {
+    margin-top: 150px;
+}
+
+/* Tour page for mobile devices */
+.mobile-tour {
+    display: none;
+}
 
