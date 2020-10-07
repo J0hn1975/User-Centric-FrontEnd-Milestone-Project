@@ -306,7 +306,7 @@ audio {
 
 @media only screen and (min-width: 200px) and (max-width: 575px) {
 #p-grid {
-    grid-template-columns: 25%;
+    grid-template-columns: 100%;
     margin-top: 20px;
 }
 
