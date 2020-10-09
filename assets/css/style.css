@@ -335,6 +335,8 @@ h3 {
 .column p {
     font-size: 15px;
     font-weight: 600;
+    font-family: Arial, Helvetica;
+    color:black;
 }
 
 .navbar-brand {
@@ -397,10 +399,6 @@ h3 {
     }
 
 /* Tour page mobile */
-.mobile-tour {
-    margin-top: 50px;
-    display: block;
-}
 
 .table-responsive {
     display: none;
@@ -691,7 +689,7 @@ th {
 }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen (min-width: 1681px) and (max-width: 1920px) {
     /* Grid container */
 #p-grid {
     margin-left: 5px;
@@ -703,7 +701,7 @@ th {
 /* Width of grid columns */
     grid-template-columns: 25% 25% 25% 25%;
 }
-}
+
 
 /* Main band image responsive */
 .img-responsive {
