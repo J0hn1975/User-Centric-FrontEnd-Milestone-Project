@@ -311,6 +311,8 @@ audio {
 }
 
 h3 {
+    color: black;
+    font-family: Arial, Helvetica;
     font-size: 18px;
     font-weight: 900;
 }
@@ -337,7 +339,7 @@ h3 {
 
 .navbar-brand {
     font-size: 5px;
-    color: red;
+   
 }
 
 .navbar-dark .navbar-nav .nav-link {
