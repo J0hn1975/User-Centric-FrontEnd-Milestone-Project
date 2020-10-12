@@ -136,6 +136,14 @@ th {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
+img.p-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
 div.p-grid-in {
     box-sizing: border-box;
     margin: 5px;
@@ -304,14 +312,49 @@ audio {
 
 /*.............................................Media Queries*/
 
-@media only screen and (min-width: 200px) and (max-width: 575px) {
+@media only screen and (min-width: 200px) and (max-width: 799px) {
 #p-grid {
     grid-template-columns: 100%;
     margin-top: 20px;
 }
 
-h3 {
+.date {
     color: black;
+    margin-top: 10px;
+    font-family: Arial, Helvetica;
+    font-size: 18px;
+    font-weight: 900;
+    
+    
+}
+
+.location {
+    color: black;
+    margin-top: 10px;
+    font-family: Arial, Helvetica;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.venue {
+    color: black;
+    margin-top: 10px;
+    font-family: Arial, Helvetica;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.doors {
+    color: black;
+    margin-top: 10px;
+    font-family: Arial, Helvetica;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.tickets {
+    color: black;
+    margin-top: 10px;
     font-family: Arial, Helvetica;
     font-size: 18px;
     font-weight: 900;
@@ -319,16 +362,26 @@ h3 {
 
 .img-fluid {
     width: 100%;
-    height: 90vh;
+    height: 78.4vh;
+}
+
+.col-sm-3 {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #ab92b3;
+    
 }
 
 .column {
     width: 100%;
     display: block;
-    padding-top: 35px;
-    margin-bottom: 50px;
+    margin-top: 35px;
+    margin-bottom: 10px;
     text-align: center;
-    background-color: #ab92b3;   
+    background-color: #ab92b3;
+    height: 160vh;
 }
 
 .column p {
@@ -336,6 +389,7 @@ h3 {
     font-weight: 600;
     font-family: Arial, Helvetica;
     color:black;
+    margin-bottom: -1px;
 }
 
 .navbar-brand {
@@ -405,15 +459,19 @@ h3 {
 .table-responsive {
     display: none;
 }
+
+
+
+
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1365px) {
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
 /* Grid container */
 #p-grid {
     display: grid;
     margin-top: 2px;
-    margin-bottom: 6px;
-    height: 240vh;
+    margin-bottom: 0px;
+    height: 250vh;
 
 /* Width of grid columns */
 grid-template-columns: 50% 50%;
@@ -467,12 +525,18 @@ grid-template-columns: 50% 50%;
     .mobile-band {
         display:none;
     }
+    
+    .mobile-tour {
+        display: none;
+    }
 
 /* Album artwork */
 img.p-img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    text-align: center;
+    
 }
 
 div.p-grid-in {
@@ -566,8 +630,8 @@ grid-template-columns: 25% 25% 25% 25%;
 }
 }
 
-@media only screen and (min-width: 1366px) {
-/* Grid container */
+@media only screen and (min-width: 1281px) and (min-width: 1366px) {
+    /* Grid container */
 #p-grid {
     margin-left: 5px;
     margin-right: 5px;
@@ -578,6 +642,24 @@ grid-template-columns: 25% 25% 25% 25%;
 
 /* Width of grid columns */
 grid-template-columns: 25% 25% 25% 25%;
+}
+
+audio {
+    width: 70%;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 100px;
+    border-width: 25px;
+    transform: scale(1.05);
+    background-color: black;
+    margin-left: 7px;
+}
+
+/* Audio player track title */
+h6 {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 
@@ -667,6 +749,8 @@ th {
     margin-bottom: 5px;
 }
 }
+
+
 
 @media only screen and (min-width: 1680px) {
 /* Grid container */
