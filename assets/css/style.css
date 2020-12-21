@@ -63,132 +63,149 @@
 
 /*............................................Band Page*/
 
-/* Band members name */
-.card-header {
-    padding: .75rem 1.25rem;
-    margin-top: -5px;
-    margin-bottom: -5px;
-    background-color: #ab92b3;
-    font-family: Arial, Helvetica;
-    border: 1px solid #ab92b3;
-    border-radius: 100px;
+.grid {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(
+        min(100%, 350px), /* min value */
+        1fr /* max value */
+      )
+    );
+  gap: 20px;
+  padding: 10px;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
-/* Band card */
-.card {
-    margin-top:-50px;
-    background-color: #ab92b3;
+.item {
+  padding: 1rem;
+  background: #ab92b3;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px black;
+  }
+
+h3, h4 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-/* Band biography */
+h5 {
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+
+
+.img {
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+
 .card-text {
     font-family: Arial, Helvetica;
+    font-size: 18px;
     text-align: justify;
-}
-
-/* Band pictures */
-.card-img, .card-img-top {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+   
 }
 
 /*............................................Tours*/
 
-/* Table colour */
-.bg-primary {
-    background-color: #ab92b3 !important;
+.card {
+    border: none;
+    list-style: none;
+   
 }
 
-/* Table margins */
-.table {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.card-deck {
+    margin-top: 50px;
+    padding: 10px;
+    
 }
 
-/* Table responsive */
-.table-responsive {
-    height: auto;
+.card-title {
+    margin-top: -40px;
+    padding-left: 5px;
+    color: white;
 }
 
-.table-header {
-    text-align: center;
+.card-text {
+    margin-top: -20px;
+    padding-left: 10px;
+    color: white;
 }
 
-td,
-th {
+.card-img-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.list-group-item {
+    border: none;
+    background-color: #ab92b3;
     font-family: Arial, Helvetica;
-    font-size: 10px;
-    font-weight: 900;
-    color: #000;
+    font-size: 14;
+    font-weight: 700;
+    color: white;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    text-align: left;
+    }
+
+
+.button1 {
+    border-radius: 5px;
+    padding-right: 5px;
+    margin-top: -30px;
+    vertical-align: middle;
+    
+   }
+   
+.btn1 {
+    position: relative;
+    background-color: green;
+    font-family: Arial, Helvetica;
+    margin-top: -10px;
+    float: right;
+    font-size: 15px;
+    font-weight: 700;
+   
 }
 
 /*............................................Store*/
 
-/* Grid container */
-#p-grid {
-    margin-left: 5px;
-    margin-right: 5px;
-    display: grid;
-    margin-top: 5px;
-    margin-bottom: 6px;
-
-/* Width of grid columns */
-    grid-template-columns: 25% 25% 25% 25%;
+.grid {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(
+        min(100%, 350px), /* min value */
+        1fr /* max value */
+      )
+    );
+  gap: 10px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  
 }
 
-img.p-img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    text-align: center;
-    
-}
+.item {
+  padding: 1rem;
+  background: #ab92b3;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px black;
+  }
 
-div.p-grid-in {
-    box-sizing: border-box;
-    margin: 5px;
-    padding: 10px;
-    border: 1px solid #e8f0ff;
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px black;
-    background: #ab92b3;
-}
-
-/* Product names */
-div.p-name {
-    font-size: 18px;
-    text-align: center;
-    font-family: Arial, Helvetica;
-    margin-top: 2px;
-    color: black;
-    border-radius: 5px;
-}
-
-/* Product price */
-div.p-price {
-    color: black;
-    text-align: center;
-    font-size: 20px;
-    text-align: center;
-    font-family: Arial, Helvetica;
-}
-
-/* Product description */
-div.p-desc {
-    color: #888;
-    font-size: 0.9em;
-}
-
-/* Add to cart button */
-button.p-add {
-    background: green;
-    color: #000;
-    border: none;
-    width: 100%;
-    padding: 1px;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 5px;
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 /* Audio player track title */
@@ -212,14 +229,32 @@ audio {
     margin-left: 7px;
 }
 
-/* Responsive */
-
-@media only screen and (max-width: 600px) {
-#p-grid {
-    grid-template-columns: 100%;
-}
+.img {
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
 }
 
+.price {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica;
+}
+
+.btn {
+    background: green;
+    color: #000;
+    border: none;
+    width: 50%;
+    padding: 1px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    }
+    
+    
 /*............................................Contact*/
 
 .contact-section .form-control {
@@ -275,11 +310,11 @@ audio {
     border-radius: 5px;
 }
 .btn.btn-accent {
-    background: #000;
+    background: green;
     color: white;
 }
 .btn.btn-accent:hover {
-    background: green;
+    background: #00FF00;
 }
 
 .ct-section-head {
@@ -312,52 +347,13 @@ audio {
 
 /*.............................................Media Queries*/
 
-@media only screen and (min-width: 200px) and (max-width: 799px) {
-#p-grid {
-    grid-template-columns: 100%;
-    margin-top: 20px;
-}
-
-.date {
+@media only screen and (min-width: 100px) and (max-width: 575px) {
+.heading {
     color: black;
     margin-top: 10px;
     font-family: Arial, Helvetica;
-    font-size: 18px;
-    font-weight: 900;
-    
-    
-}
-
-.location {
-    color: black;
-    margin-top: 10px;
-    font-family: Arial, Helvetica;
-    font-size: 18px;
-    font-weight: 900;
-}
-
-.venue {
-    color: black;
-    margin-top: 10px;
-    font-family: Arial, Helvetica;
-    font-size: 18px;
-    font-weight: 900;
-}
-
-.doors {
-    color: black;
-    margin-top: 10px;
-    font-family: Arial, Helvetica;
-    font-size: 18px;
-    font-weight: 900;
-}
-
-.tickets {
-    color: black;
-    margin-top: 10px;
-    font-family: Arial, Helvetica;
-    font-size: 18px;
-    font-weight: 900;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .img-fluid {
@@ -381,15 +377,13 @@ audio {
     margin-bottom: 10px;
     text-align: center;
     background-color: #ab92b3;
-    height: 160vh;
+    
 }
 
-.column p {
-    font-size: 15px;
-    font-weight: 600;
-    font-family: Arial, Helvetica;
-    color:black;
-    margin-bottom: -1px;
+p {
+   text-align: center;
+   font-size: 20px;
+   font-weight: 900;
 }
 
 .navbar-brand {
@@ -410,84 +404,61 @@ audio {
     overflow-y: hidden;
     z-index: 1;
 }
+}
 
-.desktop-band {
-        display: none;
-    }
 
-/* Mobile band member name */    
-    .header {
-        text-align: center;
-        font-size: 20px;
-        margin-top: -35px;
-        margin-bottom: 0px;
-        padding: 5px;
-        background-color: #ab92b3;
-        font-weight: bolder;
-        
-    }
 
-/* Mobile band page */      
-    .mobile-band {
-        display: block;
 
-    }
-    .title{
-    font-size: 20px;
+
+@media only screen and (min-width: 576px) and (max-width: 700px) {
+    .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-family: "Concert One", cursive;
+    font-size: 22px;
+}
+
+
+
+.col-sm-3.col-sm-12{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
     text-align: center;
-    vertical-align: middle;
     background-color: #ab92b3;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: -25px;
-    }
     
+}
 
-    .text {
-        background-color: #ab92b3;
-        margin-top:-8px;
-        padding: 30px;
-        height: 40vh;
-        text-align: justify;
-        font-size: 15px!important;
-        
-       
-    }
+.column {
+    width: 100%;
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #ab92b3;
+    
+}
 
-/* Tour page mobile */
-
-.table-responsive {
-    display: none;
+.heading {
+    color: black;
+    margin-top: 10px;
+    font-family: Arial, Helvetica;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 
 
-
+    
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1023px) {
-/* Grid container */
-#p-grid {
-    display: grid;
-    margin-top: 2px;
-    margin-bottom: 0px;
-    height: 250vh;
-
-/* Width of grid columns */
-grid-template-columns: 50% 50%;
-}
-
+@media only screen and (min-width: 701px) and (max-width: 1023px) {
 /* Band card */
 .card {
     height: 108%;
     z-index: -1;
 }
 
-.card-text {
-    font-family: Arial, Helvetica;
-    font-size: 16px;
-    text-align: justify;
-}
+
 
 .card-header {
     padding: .75rem 1.25rem;
@@ -509,22 +480,7 @@ grid-template-columns: 50% 50%;
     margin-bottom: 0px;
 } 
 
-  .fa-chevron-left {
-        color: black;
-        font-size: 18px;
-        height: 90px;
-    }
     
-    .fa-chevron-right {
-        color: black;
-        font-size: 18px;
-        height: 90px;
-    }
-
-  
-    .mobile-band {
-        display:none;
-    }
     
     .mobile-tour {
         display: none;
@@ -546,6 +502,7 @@ div.p-grid-in {
     border-radius: 5px;
     box-shadow: 2px 2px 3px black;
     background: #ab92b3;
+    
 }
    
 .contact-fields .form-group input,
@@ -607,41 +564,43 @@ button.p-add {
 }
 }
 
-@media only screen and (min-width: 1024px) {
-/* Grid container */
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* Grid container */
 #p-grid {
     display: grid;
     margin-top: 2px;
     margin-bottom: 6px;
     height: 215vh;
-}
-}
-
-@media only screen and (min-width: 1280px) {
-/* Grid container */
-#p-grid {
-    display: grid;
-    margin-top: 15px;
-    margin-bottom: 6px;
-    height: 0;
     
-/* Width of grid columns */
+    /* Width of grid columns */
 grid-template-columns: 25% 25% 25% 25%;
 }
+
+.mobile-tour {
+    display:none;
+}
 }
 
-@media only screen and (min-width: 1281px) and (min-width: 1366px) {
+
+
+
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
     /* Grid container */
 #p-grid {
     margin-left: 5px;
     margin-right: 5px;
     display: grid;
     margin-top: 20px;
-    margin-bottom: 6px;
     height: 0;
 
 /* Width of grid columns */
 grid-template-columns: 25% 25% 25% 25%;
+}
+
+.mobile-tour {
+    display: none;
 }
 
 audio {
@@ -657,43 +616,24 @@ audio {
 /* Audio player track title */
 h6 {
     font-size: 13px;
+    margin-right:50px;
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
+   
 }
 
 
 
 
-/* Tour page table desktop */
-.table {
-    margin-top: 20px;
-}
 
-/* Tour page for mobile devices */
-.mobile-tour {
-    display: none;
-}
+  
 
- .fa-chevron-left {
-        color: black;
-        font-size: 20px;
-        height: 100px;
-    }
-    
-    .fa-chevron-right {
-        color: black;
-        font-size: 20px;
-        height: 100px;
-    }
 
-    .mobile-band {
-        display: none;
-    }
 
 
 .card {
-    height: 110%;
+   
     z-index: -1;
 }
 
@@ -725,14 +665,6 @@ h6 {
   height: 30vh;
 }
 
-td,
-th {
-    font-family: Arial, Helvetica;
-    font-size: 20px;
-    font-weight: 700;
-    color: #000;
-}
-
 .contact-fields .form-group input,
 .contact-fields .form-group textarea {
     font-size: 15px;
@@ -750,32 +682,25 @@ th {
 }
 }
 
-
-
-@media only screen and (min-width: 1680px) {
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
 /* Grid container */
 #p-grid {
     margin-left: 5px;
     margin-right: 5px;
     display: grid;
-    margin-top: 125px;
+    margin-top: 18px;
     margin-bottom: 6px;
 
 /* Width of grid columns */
     grid-template-columns: 25% 25% 25% 25%;
 }
 
-/* Tour page table desktop */
-.table {
-    margin-top: 155px;
+
+
+
 }
 
-.col-md-12 {
-    margin-top: 200px;
-}
-}
-
-@media only screen (min-width: 1681px) and (max-width: 1920px) {
+@media only screen and (min-width: 1681px) and (max-width: 1920px) {
     /* Grid container */
 #p-grid {
     margin-left: 5px;
@@ -795,32 +720,7 @@ th {
     height: 93.8vh;
 }
 
-td {
-    font-family: Arial, Helvetica;
-    font-size:30px;
-    font-weight: 700;
-    color: #000;
 }
 
-th {
-    font-family: Arial, Helvetica;
-    font-size: 25px;
-    font-weight: 900;
-    color: #000;
-}
-/* Band page container */
-.col{
-    margin-top: 50px;
-    height: 0vh;
-}
 
-/* Tour page table desktop */
-.table {
-    margin-top: 150px;
-}
-
-/* Tour page for mobile devices */
-.mobile-tour {
-    display: none;
-}
 
