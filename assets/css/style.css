@@ -342,36 +342,10 @@ audio {
 /*.............................................Media Queries*/
 
 @media only screen and (min-width: 100px) and (max-width: 575px) {
-.heading {
-    color: black;
-    margin-top: 10px;
-    font-family: Arial, Helvetica;
-    font-size: 30px;
-    font-weight: 700;
-}
 
 .img-fluid {
     width: 100%;
     height: 78.4vh;
-}
-
-.col-sm-3 {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-    background-color: #ab92b3;
-    
-}
-
-.column {
-    width: 100%;
-    display: block;
-    margin-top: 35px;
-    margin-bottom: 10px;
-    text-align: center;
-    background-color: #ab92b3;
-    
 }
 
 p {
@@ -422,27 +396,7 @@ p {
     
 }
 
-.column {
-    width: 100%;
-    display: block;
-    margin-top: 35px;
-    margin-bottom: 10px;
-    text-align: center;
-    background-color: #ab92b3;
-    
-}
 
-.heading {
-    color: black;
-    margin-top: 10px;
-    font-family: Arial, Helvetica;
-    font-size: 30px;
-    font-weight: 700;
-}
-
-
-
-    
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1023px) {
